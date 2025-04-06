@@ -46,10 +46,10 @@
 ```markdown
 ### Экран подключения
 
-![Подключение](screenshots/s1.png)
-![Подключение](screenshots/s2.png)
-![Подключение](screenshots/s3.png)
+![Подключение](assets/screenshots/s1.png)
+![Подключение](assets/screenshots/s2.png)
+![Подключение](assets/screenshots/s3.png)
 
 ### Аналитика
 
-![Аналитика](screenshots/s4.png)
+![Аналитика](assets/screenshots/s4.png)
