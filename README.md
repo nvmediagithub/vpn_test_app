@@ -58,7 +58,7 @@
 ### 📊 Аналитика
 
 <p align="center">
-  <img src="assets/screenshots/s4.png" width="600"/>
+  <img src="assets/screenshots/s4.png" width="250"/>
 </p>
 <p align="center">
   <sub>График и список последних VPN-сессий с отображением длительности</sub>
