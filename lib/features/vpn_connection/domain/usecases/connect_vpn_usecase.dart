@@ -7,6 +7,6 @@ class ConnectVpnUseCase {
   ConnectVpnUseCase(this.repository);
 
   Future<VpnConnectionEntity> call() async {
-    return await repository.getCurrentConnection();
+    return await repository.connect();
   }
 }

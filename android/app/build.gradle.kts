@@ -8,7 +8,8 @@ plugins {
 android {
     namespace = "com.example.vpn_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -42,3 +43,12 @@ android {
 flutter {
     source = "../.."
 }
+
+
+buildscript {
+    dependencies {
+        classpath("com.google.gms:google-services:4.3.14")
+    }
+}
+
+apply(plugin = "com.google.gms.google-services")

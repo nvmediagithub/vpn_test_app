@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849815574009",
+    "project_id": "vpntestapp-b2760",
+    "storage_bucket": "vpntestapp-b2760.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849815574009:android:9e1f23387caabe0b409928",
+        "android_client_info": {
+          "package_name": "com.example.vpn_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpu-domanuvmySpTzKMVFiQ28ToiUvrQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,11 +1,16 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vpn_app/features/vpn_connection/domain/usecases/connect_vpn_usecase.dart';
+import 'package:vpn_app/features/vpn_connection/domain/usecases/disconnect_vpn_usecase.dart';
 import 'package:vpn_app/features/vpn_connection/presentation/cubit/vpn_connection_state.dart';
 
 class VpnConnectionCubit extends Cubit<VpnConnectionState> {
   final ConnectVpnUseCase connectUseCase;
+  final DisconnectVpnUseCase disconnectUseCase;
 
-  VpnConnectionCubit({required this.connectUseCase}) : super(VpnInitial());
+  VpnConnectionCubit({
+    required this.connectUseCase,
+    required this.disconnectUseCase,
+  }) : super(VpnInitial());
 
   Future<void> connectVpn() async {
     emit(VpnConnecting());
@@ -18,7 +23,11 @@ class VpnConnectionCubit extends Cubit<VpnConnectionState> {
   }
 
   Future<void> disconnectVpn() async {
-    // Здесь можно вызвать метод disconnect из репозитория, если потребуется
-    emit(VpnDisconnected());
+    try {
+      await disconnectUseCase();
+      emit(VpnDisconnected());
+    } catch (error) {
+      emit(VpnError(message: error.toString()));
+    }
   }
 }
