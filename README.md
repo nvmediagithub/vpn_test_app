@@ -45,12 +45,21 @@
 
 ## 📸 Скриншоты
 
-### Экран подключения
+### 🌐 Экран подключения
 
-![Подключение 1](assets/screenshots/s1.png)
-![Подключение 2](assets/screenshots/s2.png)
-![Подключение 3](assets/screenshots/s3.png)
+<table>
+  <tr>
+    <td align="center"><img src="assets/screenshots/s1.png" width="250"/><br/><sub>🟡 Ожидание подключения</sub></td>
+    <td align="center"><img src="assets/screenshots/s2.png" width="250"/><br/><sub>🔵 Подключение...</sub></td>
+    <td align="center"><img src="assets/screenshots/s3.png" width="250"/><br/><sub>🟢 Подключено</sub></td>
+  </tr>
+</table>
 
-### Аналитика
+### 📊 Аналитика
 
-![Аналитика](assets/screenshots/s4.png)
+<p align="center">
+  <img src="assets/screenshots/s4.png" width="600"/>
+</p>
+<p align="center">
+  <sub>График и список последних VPN-сессий с отображением длительности</sub>
+</p>
